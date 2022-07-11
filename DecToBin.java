@@ -1,25 +1,21 @@
 package com.BridgeLabz;
 
 public class DecToBin {
-
-        public static void toBinary(int decimal){
-            int binary[] = new int[40];
-            int index = 0;
-            while(decimal > 0){
-                binary[index++] = decimal%2;
-                decimal = decimal/2;
-            }
-            for(int i = index-1;i >= 0;i--){
-                System.out.print(binary[i]);
-            }
-            System.out.println();//new line
+ public static void main(String args[]){
+            
+      Scanner in =new Scanner(System.in);
+        System.out.println("Enter a decimal number");
+        int num =in.nextInt();
+        String b="";
+        int t =num;
+        while(t>0)
+        {
+            int r =t%2;
+            t=t/2;
+            b=r+b;
         }
-        public static void main(String args[]){
-            System.out.println("Decimal of 10 is: ");
-            toBinary(10);
-            System.out.println("Decimal of 21 is: ");
-            toBinary(21);
-            System.out.println("Decimal of 31 is: ");
-            toBinary(31);
+        System.out.println("Binary Equivalent of " +num+ " is " +b);
+        System.out.println();
+       
         }
 }
