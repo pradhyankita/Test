@@ -1,6 +1,10 @@
 package com.BridgeLabz;
 import java.util.*;
+
 public class anagram{
+
+public class Anagram{
+
     public static void main(String []args){
         String str1 = "SILEN";
         String str2 = "LISTEN";
